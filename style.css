@@ -1,4 +1,5 @@
-*{
+
+   *{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -48,17 +49,17 @@ nav>button:hover{
 
 .main-page > .hero-image{
     position: absolute;
-    width: 80%;
+    max-width: 80%;
     height: 170%;
     /* margin-left: 90rem;
     margin-top: -15rem; */
-    top:-20rem;
-    right: -40rem;
+    top:-25rem;
+    right: -15rem;
 }
 
 .main-page > .mob-image{
-    position: absolute;
-    visibility: hidden;
+   
+    display: none;
 }
 
 
@@ -280,7 +281,15 @@ nav>button:hover{
 
 @media screen and (max-width:1000px){
 
-    
+    body{
+        overflow-x:hidden;
+        
+        
+    }
+
+    nav{
+        max-width: 1000px;
+    }
     
     nav> img{
         height: 3.5rem;
@@ -292,11 +301,19 @@ nav>button:hover{
         height: 4rem;
     }
 
+    .main-page{
+        width:100%;
+    }
+
     .main-page > .hero-image{
-        width: 100%;
+        
+        max-width: 100%;
         height: 120%;
         top:-10rem;
-        right: -30rem;
+        right: 0rem;
+       
+        
+       
     }
     
  
@@ -386,40 +403,50 @@ nav>button:hover{
 
 @media screen and (max-width:690px){
 
+    nav{
+       max-width: 90%; 
+    }
+
     .main-page{
+        max-width:90%;
         display: flex;
         flex-direction: column;
-        padding-bottom: 30rem;
+        max-width: 90%;
+        padding-bottom: 10rem;
         align-items: center;
         padding-top: 3rem;
+        
     }
 
     .main-page > .hero-image{
-        visibility: hidden;
-        position: absolute;
+        display: none;
+        
     }
 
     .main-page > .mob-image{
-        visibility: visible;
-        margin-top: 30rem;
-        padding-top:5rem;
+        display: block;
+        
+        width:80%;
+        margin:0 auto;
     }
     
   
     .main-page > h1{
        font-size: 4.8rem;
+       padding: 0 1rem 0 1rem;
        width:100%;
     }
 
     .main-page > p{
        font-size: 1.7rem;
        width:100%;
-       padding-top: 2rem;
-       padding-bottom: 2rem;
+       
+       padding: 2rem 1rem 2rem 1rem;
     }
     
     .main-page > button{
         align-self: flex-start;
+        margin-left: 1rem;
     }
     
     .main-page > button:hover{
@@ -427,11 +454,11 @@ nav>button:hover{
     }
 
     .card-section{
-        width:100%;
+        max-width:90%;
         height: auto;
-        margin:0 auto;
+        margin:2rem auto;
         margin-top: 11rem;
-        padding: 5rem 6rem 16rem 6rem;
+        padding: 5rem 2rem 16rem 2rem;
 
         display: flex;
         flex-direction: column;
@@ -451,5 +478,42 @@ nav>button:hover{
         margin-top: 1rem;
     }
     
+    .footer{
+        max-width:90%;
+        margin-top: -6rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #13183F;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 1rem;
+        
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .footer > button{
+        width:15rem;
+        height: 5rem;
+        background:linear-gradient(#4851FF, #F02AA6);
+        
+        border:none;
+        border-radius:2.8rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .footer > button:hover{
+        opacity: 0.5;
+        color:#fff;
+        
+    }
+    
+    .footer > img{
+        height: 4rem;
+        padding-top: 1.6rem;
+    
+        filter: invert(1) grayscale(100%) brightness(300%)
+    }
 }
 
