@@ -396,6 +396,7 @@ nav>button:hover{
 
     .main-page > .hero-image{
         visibility: hidden;
+        position: absolute;
     }
 
     .main-page > .mob-image{
@@ -434,6 +435,10 @@ nav>button:hover{
         display: flex;
         flex-direction: column;
       background-color: whitesmoke;
+    }
+
+    .card{
+        width:100%;
     }
     
     
