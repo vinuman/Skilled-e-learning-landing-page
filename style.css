@@ -402,6 +402,7 @@ nav>button:hover{
     .main-page > .mob-image{
         visibility: visible;
         margin-top: 30rem;
+        padding-top:5rem;
     }
     
   
